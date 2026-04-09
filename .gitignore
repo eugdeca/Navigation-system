@@ -1,0 +1,6 @@
+# MATLAB/Simulink junk
+slprj/
+*.slxc
+*.asv
+*~
+*.r2024b
