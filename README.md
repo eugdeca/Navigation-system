@@ -33,11 +33,11 @@ To evaluate the system's robustness, two datasets were generated via waypoint in
 1. **High Dynamics:** A flight path with strong acceleration changes, which highlights the operational limits of the TRIAD algorithm.
 2. **Low Dynamics:** A flight path with near-zero accelerations, resulting in significantly improved attitude and position estimation.
 
-### 3D Position Estimation
+### Position Estimation
 <img width="1840" height="925" alt="image" src="https://github.com/user-attachments/assets/10cd0b65-ea66-48fc-8743-706d168a3ad5" />
 *Comparison between the true 3D position and the EKF point-by-point estimation.*
 
-### Estimation Error
+### Attitude Estimation
 <img width="1908" height="959" alt="image" src="https://github.com/user-attachments/assets/5e5671a5-016e-464e-ab5c-a4ba03ef7dc8" />
 *Comparison between the true attitude and the EKF point-by-point estimation.*
 
