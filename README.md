@@ -41,6 +41,11 @@ To evaluate the system's robustness, two datasets were generated via waypoint in
 <img width="1908" height="959" alt="image" src="https://github.com/user-attachments/assets/5e5671a5-016e-464e-ab5c-a4ba03ef7dc8" />
 *Comparison between the true attitude and the EKF point-by-point estimation.*
 
+## 🚀 How to Run
+To correctly execute the simulation, follow these steps:
+1. Open MATLAB and navigate to the project directory.
+2. **First, run the `TRAJECTORY1` script.** This is mandatory to generate the flight path and initialize all the necessary variables in the MATLAB workspace.
+3. Once the script has finished running, open and run the Simulink model to execute the simulation and the Extended Kalman Filter.
 
 ## 👤 Author
 * **Eugenio Delli Carri**
