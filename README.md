@@ -1,13 +1,13 @@
-# 🛩️ Multi-Sensor Navigation System for UAV
+# Multi-Sensor Navigation System for UAV
 
 ![MATLAB](https://img.shields.io/badge/MATLAB-Data_Fusion-blue.svg)
 
-## 📌 Project Overview
+## Project Overview
 This repository contains the implementation of a navigation system for an Unmanned Aerial Vehicle (UAV) operating near the "Polo A" of the Engineering Department in Pisa. The flight scenario covers a localized area of a few tens of meters.
 
 The core objective is the joint estimation of the UAV's position, velocity, and attitude using a single **Extended Kalman Filter (EKF)**. The system relies on a flat-earth model, where the North-East-Down (NED) navigation frame is considered inertial.
 
-## ⚙️ System Architecture & Sensors
+## System Architecture & Sensors
 The system fuses data from multiple simulated sensors operating at different sampling frequencies:
 
 * **UWB (Ultra-Wideband) Sensor:** provides distance-only measurements (no triangulation) from 6 base stations located at known positions. Runs at **50 Hz**.
@@ -26,7 +26,7 @@ The Extended Kalman Filter is designed to continuously estimate the following va
 * 3x Angular Velocity (Body frame)
 * 3x Gyroscope Bias
 
-## 📊 Results & Performance
+## Results & Performance
 System observability is slightly affected by the UWB sensors running at half the system's sampling frequency and by the geometric distribution of the 6 UWB stations (which impacts the estimation along the *down* axis).
 
 To evaluate the system's robustness, two datasets were generated via waypoint interpolation:
@@ -41,11 +41,11 @@ To evaluate the system's robustness, two datasets were generated via waypoint in
 <img width="1908" height="959" alt="image" src="https://github.com/user-attachments/assets/5e5671a5-016e-464e-ab5c-a4ba03ef7dc8" />
 *Comparison between the true attitude and the EKF point-by-point estimation.*
 
-## 🚀 How to Run
+## How to Run
 To correctly execute the simulation, follow these steps:
 1. Open MATLAB and navigate to the project directory.
 2. **First, run the `TRAJECTORY1` script.** This is mandatory to generate the flight path and initialize all the necessary variables in the MATLAB workspace.
 3. Once the script has finished running, open and run the Simulink model to execute the simulation and the Extended Kalman Filter.
 
-## 👤 Author
+## Author
 * **Eugenio Delli Carri**
